@@ -10,7 +10,9 @@ A mi alkalmazásunk a következőket kell hogy tudja:
 - tudnunk kell hogy az osszes rendszerben talalhato panasz kozul mennyi lett megoldva
 - A nagyprioritású, még nyitott státuszú panaszokat tovább kell küldenie egy másik rendszer adattáraba.
 
-A rendszer adatbázisában el vannak tárolva ügyintézők is. Az ügyintézők a következő tulajdonságokkal rendelkeznek: név, email, telefonszam. Tovabba az is tarolva van a rendszerben, hogy az adott ugyintezo kiemelt minositesu-e. A bejövő panaszokat a megfelelő ügyintézőknek meg kell kapni. Ez a kovetkezoket jelenti:
+A rendszer adatbázisában el vannak tárolva ügyintézők is. Az ügyintézők a következő tulajdonságokkal rendelkeznek: név, email, telefonszam. Tovabba az is tarolva van a rendszerben, hogy az adott ugyintezo kiemelt minositesu-e. Az ugyintezohoz tobb panaszeset is tartozhat, de egy panasznak csak egy ugyintezoje van. Erdemes lehet a panaszkezelo objektumban tarolni a hozza tartozo panaszokat.
+
+ A bejövő panaszokat a megfelelő ügyintézőknek meg kell kapni. Ez a kovetkezoket jelenti:
 
 - a panaszok kozul a legregebbieket kell eloszor odaadni ugyintezonek
 - magas prioritasu panaszt csak kiemelt minositesu panaszkezelo kaphat meg
