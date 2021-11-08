@@ -34,9 +34,3 @@ end
 
 
 
-# complaint_one = Complaint.new("róka", "piros", Time.now, true)
-# puts complaint_one.description
-# puts complaint_one 
-
-complaint.move_to_inprogress
-complaint.move_to_closed
