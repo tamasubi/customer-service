@@ -6,7 +6,7 @@ Cím, leírás, időbélyeg, státusz. Státuszai lehetnek nyitott, folyamatban 
 
 A mi alkalmazásunk a következőket kell hogy tudja:
 - Fel kell hogy ismerje, és objektumban kell hogy tárolja a bejövő adatokat
-- ki kell tudnunk szamolni, hogy hany magas prioritasu, nem meg oldott ugylet van a rendszerben
+- ki kell tudnunk szamolni, hogy hany magas prioritasu, nem meg oldott ugylet van a rendszerben (itt szerintem if-et kell használni és iterálni)
 - tudnunk kell hogy az osszes rendszerben talalhato panasz kozul mennyi lett megoldva
 - A nagyprioritású, még nyitott státuszú panaszokat tovább kell küldenie egy másik rendszer adattáraba.
 

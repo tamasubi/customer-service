@@ -1,5 +1,7 @@
 class Complaint
-    attr_accessor :title, :description, :timestamp, :top_priority
+    attr_accessor :title, :description, :top_priority
+    attr_reader :timestamp
+    
     
     def initialize(title, description, timestamp, top_priority)
         @title = title
@@ -13,6 +15,7 @@ class Complaint
         "complaint: #{@title}"
     end
 end
+
 
 
 
