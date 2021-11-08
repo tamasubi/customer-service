@@ -1,4 +1,4 @@
-SUPPORT_PEOPLE = [
+SUPPORT_SPECIALISTS = [
   {
     name: 'Lajos',
     email: 'lajos@example.com',
