@@ -1,1 +1,1 @@
-COMPLAINTS = []
+COMPLAINTS_DB = []

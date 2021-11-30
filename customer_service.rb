@@ -1,25 +1,13 @@
 require './models/complaint.rb'
 require './models/support_specialist.rb'
+require './importers/complaints_importer.rb'
 
-require './db/complaints.rb'
-require './external_data/external_complaint_source.rb'
+ComplaintsImporter.run
 
-EXTERNAL_COMPLAINTS.each do |external_complaint|
-    complaint = Complaint.new(
-        external_complaint[:title], 
-        external_complaint[:description], 
-        external_complaint[:timestamp], 
-        external_complaint[:top_priority]
-    )
-    
-    COMPLAINTS.push(complaint)
-end 
-
-puts COMPLAINTS
+puts Complaint.filter_top_priority
 
 
-
-
+puts Complaint.filter_closed_status
 
 
 
