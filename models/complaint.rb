@@ -1,3 +1,5 @@
+require_relative '../db/complaints.rb'
+
 class Complaint
     attr_accessor :title, :description, :top_priority
     attr_reader :timestamp, :status
@@ -24,7 +26,19 @@ class Complaint
 
         @status = status
     end
-    
+
+    def self.filter_top_priority
+        COMPLAINTS_DB.filter do |complaint|
+            complaint.top_priority == true
+        end
+    end
+
+    def self.filter_closed_status
+        COMPLAINTS_DB.filter do |complaint|
+            complaint.status == :closed
+        end
+    end
+
 
     def to_s
         "complaint: #{@title}"
